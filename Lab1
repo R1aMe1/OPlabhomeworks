@@ -1,0 +1,51 @@
+package lab1ophomework;
+
+import java.util.Scanner;
+
+//public class homework1 {
+//
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		System.out.println("Введите чисело а: ");
+//		Scanner sc = new Scanner(System.in);
+//		int a = sc.nextInt();
+//		System.out.println("Введите степень числа а: ");
+//		Scanner cc = new Scanner(System.in);
+//		int n = cc.nextInt();
+//		int i = 1, y = a;
+//		while (i < n) {
+//			a*=y;
+//			i++;
+//		}
+//		System.out.print("а в n-ой степени: ");
+//		System.out.println(a);
+//		sc.close();
+//		cc.close();
+//	}
+//
+//}
+
+
+public class homework1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Введите чисело а: ");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		System.out.println("Введите степень числа а: ");
+		Scanner cc = new Scanner(System.in);
+		int n = cc.nextInt();
+		int i = 1, y = 1, ya = a;
+		do{
+			a*=y;
+			i++;
+			y = ya;
+		}while (i <= n);
+		System.out.print("а в n-ой степени: ");
+		System.out.println(a);
+		sc.close();
+		cc.close();
+	}
+
+}
